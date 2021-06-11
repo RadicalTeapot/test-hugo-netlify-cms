@@ -10,7 +10,7 @@ collections:
     create: true
     slug: '{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
@@ -19,17 +19,17 @@ collections:
     label: Pages
     editor:
       preview: false
-    files:
+    files: # Each entry here should already exist
       - label: Index Page
         name: index
         file: content/_index.md
         fields:
-          - { label: 'Title', name: 'title', widget: hidden, default: 'Home' }
+          - { label: 'Title', name: 'title', widget: 'hidden' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: About Page
         name: about
         file: content/about.md
         fields:
-          - { label: 'Title', name: 'title', widget: hidden, default: 'About' }
-          - { label: 'Permalink', name: 'permalink', widget: 'string', default: '/about/' }
+          - { label: 'Title', name: 'title', widget: 'hidden' }
+          - { label: 'Permalink', name: 'permalink', widget: 'hidden' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
