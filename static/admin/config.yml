@@ -5,7 +5,7 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: 'docs'
-    label: 'Docs'
+    label: 'docs'
     folder: 'content/docs'
     create: true
     slug: '{{slug}}'
@@ -15,3 +15,21 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: pages
+    label: Pages
+    editor:
+      preview: false
+    files:
+      - label: Index Page
+        name: index
+        file: content/_index.md
+        fields:
+          - { label: Layout, name: title, widget: hidden, default: home }
+          - { label: Body, name: body, widget: markdown }
+      - label: About Page
+        name: about
+        file: content/about.md
+        fields:
+          - { label: Title, name: title, widget: hidden, default: About }
+          - { label: Permalink, name: permalink, widget: string, default: '/about/' }
+          - { label: Body, name: body, widget: markdown }
