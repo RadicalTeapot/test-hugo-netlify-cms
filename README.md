@@ -1,6 +1,6 @@
 # Test Hugo / Netlify CMS
 
-Test Hugo static website generatore with Netlify CMS
+Test Hugo static website generator with Netlify CMS
 
 ## Installation
 
