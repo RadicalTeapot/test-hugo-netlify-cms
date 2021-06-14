@@ -3,4 +3,4 @@ title: Home
 ---
 
 Hello, world !
-Welcome the test.
+Welcome to the test.
